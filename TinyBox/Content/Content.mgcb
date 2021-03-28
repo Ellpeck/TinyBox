@@ -13,3 +13,12 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin Source/draw.py
+/copy:Source/draw.py
+
+#begin Source/test.py
+/copy:Source/test.py
+
+#begin Source/game.py
+/copy:Source/game.py
+

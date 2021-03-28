@@ -2,13 +2,14 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <TargetFramework>net5.0</TargetFramework>
         <PublishReadyToRun>false</PublishReadyToRun>
         <TieredCompilation>false</TieredCompilation>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Contentless" Version="3.0.5" />
+        <PackageReference Include="IronPython" Version="2.7.11" />
         <PackageReference Include="MLEM.Startup" Version="4.3.0" />
         <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
         <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
@@ -20,8 +21,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <TrimmerRootAssembly Include="MonoGame.Framework" Visible="false" />
-        <TrimmerRootAssembly Include="MLEM" Visible="false" />
-        <TrimmerRootAssembly Include="MLEM.Ui" Visible="false" />
+      <Folder Include="Content\Example" />
     </ItemGroup>
 </Project>
