@@ -7,5 +7,9 @@ def pix(x, y, color):
     _draw.Pix(x, y, color)
 
 
-def rec(x, y, width, height, color):
-    _draw.Rec(x, y, width, height, color)
+def rect(x, y, width, height, color):
+    _draw.Rect(x, y, width, height, color)
+
+
+def string(font, x, y, string, color):
+    _draw.String(font, x, y, string, color)

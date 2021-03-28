@@ -2,6 +2,12 @@
     "overrides": {
         "Source/": {
             "copy": true
+        },
+        "Example/": {
+            "copy": true
+        },
+        "Fonts/": {
+            "copy": true
         }
     }
 }

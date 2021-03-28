@@ -34,7 +34,7 @@ namespace TinyBox {
             this.Python = new PythonHandler(this);
             Hook.Initialize(this);
             
-            this.Python.LoadGame("Content/Source/test.py");
+            this.Python.LoadGame("Content/Example/name.py");
         }
 
         protected override void DoUpdate(GameTime gameTime) {

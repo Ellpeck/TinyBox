@@ -12,13 +12,27 @@
 
 
 #---------------------------------- Content ---------------------------------#
+#begin Example/name.py
+/copy:Example/name.py
+
+#begin Fonts/Basis33.ttf
+/copy:Fonts/Basis33.ttf
+
+#begin Fonts/BitPotion.ttf
+/copy:Fonts/BitPotion.ttf
+
+#begin Fonts/Cayetano.ttf
+/copy:Fonts/Cayetano.ttf
+
+#begin Fonts/OrangeKid.ttf
+/copy:Fonts/OrangeKid.ttf
 
 #begin Source/draw.py
 /copy:Source/draw.py
 
-#begin Source/test.py
-/copy:Source/test.py
-
 #begin Source/game.py
 /copy:Source/game.py
+
+#begin Source/resource.py
+/copy:Source/resource.py
 
