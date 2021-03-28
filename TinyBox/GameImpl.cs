@@ -15,7 +15,6 @@ namespace TinyBox {
 
         public static GameImpl Instance { get; private set; }
 
-        public PythonHandler Python { get; private set; }
         private RenderTarget2D screen;
 
         public GameImpl() {
@@ -31,15 +30,13 @@ namespace TinyBox {
             base.LoadContent();
             this.screen = new RenderTarget2D(this.GraphicsDevice, Width, Height);
 
-            this.Python = new PythonHandler(this);
-            Hook.Initialize(this);
-            
-            this.Python.LoadGame("Content/Example/name.py");
+            GameHandler.Initialize();
+            GameHandler.LoadGame("Content/Example/tex.py");
         }
 
         protected override void DoUpdate(GameTime gameTime) {
             base.DoUpdate(gameTime);
-            this.Python.Update(gameTime);
+            GameHandler.Update(gameTime);
         }
 
         protected override void DoDraw(GameTime gameTime) {
@@ -49,7 +46,7 @@ namespace TinyBox {
             using (this.GraphicsDevice.WithRenderTarget(this.screen)) {
                 this.GraphicsDevice.Clear(Color.CornflowerBlue);
                 this.SpriteBatch.Begin(SpriteSortMode.Deferred, null, SamplerState.PointClamp);
-                this.Python.Draw(gameTime);
+                GameHandler.Draw(gameTime);
                 this.SpriteBatch.End();
             }
 

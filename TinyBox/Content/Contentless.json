@@ -1,9 +1,17 @@
 ﻿{
+    "exclude": [
+        "obj/",
+        "bin/",
+        "Fonts/*.ttf"
+    ],
     "overrides": {
         "Source/": {
             "copy": true
         },
         "Example/": {
+            "copy": true
+        },
+        "Fonts/": {
             "copy": true
         }
     }

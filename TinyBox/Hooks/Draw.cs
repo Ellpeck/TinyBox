@@ -1,26 +1,30 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MLEM.Extensions;
-using MonoGame.Extended.BitmapFonts;
 
 namespace TinyBox.Hooks {
-    public class Draw : Hook {
+    public static class Draw {
 
-        public Draw(GameImpl game) : base(game) {
+        private static SpriteBatch Batch => GameImpl.Instance.SpriteBatch;
+
+        public static void Pix(int x, int y, int color) {
+            var tex = Batch.GetBlankTexture();
+            Batch.Draw(tex, new Rectangle(x, y, 1, 1), ColorHelper.FromHexRgb(color));
         }
 
-        public void Pix(int x, int y, int color) {
-            this.Rect(x, y, 1, 1, color);
+        public static void Rect(int x, int y, int width, int height, int color) {
+            var tex = Batch.GetBlankTexture();
+            Batch.Draw(tex, new Rectangle(x, y, width, height), ColorHelper.FromHexRgb(color));
         }
 
-        public void Rect(int x, int y, int width, int height, int color) {
-            var tex = this.Batch.GetBlankTexture();
-            this.Batch.Draw(tex, new Rectangle(x, y, width, height), ColorHelper.FromHexRgb(color));
+        public static void Tex(int textureId, int x, int y, int u, int v, int w, int h, int color, int scale, int flip) {
+            var texture = Resource.Textures[textureId];
+            Batch.Draw(texture, new Vector2(x, y), new Rectangle(u, v, w, h), ColorHelper.FromHexRgb(color), 0, Vector2.Zero, scale, (SpriteEffects) flip, 0);
         }
 
-        public void String(int fontId, int x, int y, string strg, int color) {
-            var font = Resource.Instance.Fonts[fontId];
-            font.Font.DrawString(this.Batch, strg, new Vector2(x, y), ColorHelper.FromHexRgb(color), 0, Vector2.Zero, font.Scale, SpriteEffects.None, 0);
+        public static void String(int fontId, int x, int y, string strg, int color) {
+            var font = Resource.Fonts[fontId];
+            font.Value.DrawString(Batch, strg, new Vector2(x, y), ColorHelper.FromHexRgb(color), 0, Vector2.Zero, font.Scale, SpriteEffects.None, 0);
         }
 
     }

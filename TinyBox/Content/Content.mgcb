@@ -10,11 +10,34 @@
 
 #-------------------------------- References --------------------------------#
 
-/reference:..\..\packages\monogame.extended.content.pipeline\3.8.0\tools\MonoGame.Extended.Content.Pipeline.dll
-
 #---------------------------------- Content ---------------------------------#
+
 #begin Example/name.py
 /copy:Example/name.py
+
+#begin Fonts/Basis33.fnt
+/copy:Fonts/Basis33.fnt
+
+#begin Fonts/Basis33_0.png
+/copy:Fonts/Basis33_0.png
+
+#begin Fonts/BitPotion.fnt
+/copy:Fonts/BitPotion.fnt
+
+#begin Fonts/BitPotion_0.png
+/copy:Fonts/BitPotion_0.png
+
+#begin Fonts/Cayetano.fnt
+/copy:Fonts/Cayetano.fnt
+
+#begin Fonts/Cayetano_0.png
+/copy:Fonts/Cayetano_0.png
+
+#begin Fonts/OrangeKid.fnt
+/copy:Fonts/OrangeKid.fnt
+
+#begin Fonts/OrangeKid_0.png
+/copy:Fonts/OrangeKid_0.png
 
 #begin Source/draw.py
 /copy:Source/draw.py
@@ -25,43 +48,12 @@
 #begin Source/resource.py
 /copy:Source/resource.py
 
-#begin Fonts/Basis33.fnt
-/importer:BitmapFontImporter
-/processor:BitmapFontProcessor
-/build:Fonts/Basis33.fnt
+#begin Example/font.py
+/copy:Example/font.py
 
-#begin Fonts/Basis33_0.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/build:Fonts/Basis33_0.png
+#begin Example/tex.png
+/copy:Example/tex.png
 
-#begin Fonts/BitPotion.fnt
-/importer:BitmapFontImporter
-/processor:BitmapFontProcessor
-/build:Fonts/BitPotion.fnt
-
-#begin Fonts/BitPotion_0.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/build:Fonts/BitPotion_0.png
-
-#begin Fonts/Cayetano.fnt
-/importer:BitmapFontImporter
-/processor:BitmapFontProcessor
-/build:Fonts/Cayetano.fnt
-
-#begin Fonts/Cayetano_0.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/build:Fonts/Cayetano_0.png
-
-#begin Fonts/OrangeKid.fnt
-/importer:BitmapFontImporter
-/processor:BitmapFontProcessor
-/build:Fonts/OrangeKid.fnt
-
-#begin Fonts/OrangeKid_0.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/build:Fonts/OrangeKid_0.png
+#begin Example/tex.py
+/copy:Example/tex.py
 

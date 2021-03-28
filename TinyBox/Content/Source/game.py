@@ -1,3 +1,7 @@
+width = 0
+height = 0
+
+
 class TinyBoxGame(object):
     def __init__(self):
         pass

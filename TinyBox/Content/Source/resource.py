@@ -1,15 +1,17 @@
-from TinyBox import Hooks
-
-_resource = Hooks.Hook.Get("Resource")
+from TinyBox.Hooks import Resource
 
 
 def font(name, scale):
-    return _resource.Font(name, scale)
+    return Resource.Font(name, scale)
+
+
+def tex(name):
+    return Resource.Tex(name)
 
 
 def string_width(font, string):
-    return _resource.StringWidth(font, string)
+    return Resource.StringWidth(font, string)
 
 
 def string_height(font, string):
-    return _resource.StringHeight(font, string)
+    return Resource.StringHeight(font, string)
