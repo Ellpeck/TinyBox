@@ -3,8 +3,8 @@ from TinyBox import Hooks
 _resource = Hooks.Hook.Get("Resource")
 
 
-def font(name, size):
-    return _resource.Font(name, size)
+def font(name, scale):
+    return _resource.Font(name, scale)
 
 
 def string_width(font, string):

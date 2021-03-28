@@ -10,22 +10,11 @@
 
 #-------------------------------- References --------------------------------#
 
+/reference:..\..\packages\monogame.extended.content.pipeline\3.8.0\tools\MonoGame.Extended.Content.Pipeline.dll
 
 #---------------------------------- Content ---------------------------------#
 #begin Example/name.py
 /copy:Example/name.py
-
-#begin Fonts/Basis33.ttf
-/copy:Fonts/Basis33.ttf
-
-#begin Fonts/BitPotion.ttf
-/copy:Fonts/BitPotion.ttf
-
-#begin Fonts/Cayetano.ttf
-/copy:Fonts/Cayetano.ttf
-
-#begin Fonts/OrangeKid.ttf
-/copy:Fonts/OrangeKid.ttf
 
 #begin Source/draw.py
 /copy:Source/draw.py
@@ -35,4 +24,44 @@
 
 #begin Source/resource.py
 /copy:Source/resource.py
+
+#begin Fonts/Basis33.fnt
+/importer:BitmapFontImporter
+/processor:BitmapFontProcessor
+/build:Fonts/Basis33.fnt
+
+#begin Fonts/Basis33_0.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Fonts/Basis33_0.png
+
+#begin Fonts/BitPotion.fnt
+/importer:BitmapFontImporter
+/processor:BitmapFontProcessor
+/build:Fonts/BitPotion.fnt
+
+#begin Fonts/BitPotion_0.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Fonts/BitPotion_0.png
+
+#begin Fonts/Cayetano.fnt
+/importer:BitmapFontImporter
+/processor:BitmapFontProcessor
+/build:Fonts/Cayetano.fnt
+
+#begin Fonts/Cayetano_0.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Fonts/Cayetano_0.png
+
+#begin Fonts/OrangeKid.fnt
+/importer:BitmapFontImporter
+/processor:BitmapFontProcessor
+/build:Fonts/OrangeKid.fnt
+
+#begin Fonts/OrangeKid_0.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Fonts/OrangeKid_0.png
 
