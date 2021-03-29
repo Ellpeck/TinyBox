@@ -57,3 +57,20 @@
 #begin Example/tex.py
 /copy:Example/tex.py
 
+#begin Textures/Ui.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/build:Textures/Ui.png
+
+#begin Fonts/Chava.fnt
+/copy:Fonts/Chava.fnt
+
+#begin Fonts/Chava_0.png
+/copy:Fonts/Chava_0.png
+
+#begin Fonts/GameOver.fnt
+/copy:Fonts/GameOver.fnt
+
+#begin Fonts/GameOver_0.png
+/copy:Fonts/GameOver_0.png
+

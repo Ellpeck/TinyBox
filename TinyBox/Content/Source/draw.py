@@ -14,9 +14,9 @@ def rect(x, y, width, height, color=0xFFFFFF):
     Draw.Rect(x, y, width, height, color)
 
 
-def tex(tex, x, y, u, v, w, h, color=0xFFFFFF, scale=1, flip=flip_none):
-    Draw.Tex(tex, x, y, u, v, w, h, color, scale, flip)
+def tex(texture, x, y, u, v, w, h, color=0xFFFFFF, scale=1, flip=flip_none):
+    Draw.Tex(texture, x, y, u, v, w, h, color, scale, flip)
 
 
-def string(font, x, y, string, color=0xFFFFFF):
-    Draw.String(font, x, y, string, color)
+def string(font, x, y, text, color=0xFFFFFF):
+    Draw.String(font, x, y, text, color)

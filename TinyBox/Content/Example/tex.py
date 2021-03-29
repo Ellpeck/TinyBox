@@ -11,8 +11,8 @@ class Game(game.TinyBoxGame):
 
     def draw(self, delta):
         scale = 4
-        centerX = game.width / 2 - 8 * scale
-        centerY = game.height / 2 - 8 * scale
+        center_x = game.width / 2 - 8 * scale
+        center_y = game.height / 2 - 8 * scale
         u = 16 * (int(self.frame) % 4)
-        draw.tex(self.tex, centerX, centerY, u, 0, 16, 16, scale=scale, flip=draw.flip_x)
+        draw.tex(self.tex, center_x, center_y, u, 0, 16, 16, scale=scale, flip=draw.flip_x)
         self.frame += delta * 5
