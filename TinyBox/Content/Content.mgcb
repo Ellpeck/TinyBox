@@ -12,8 +12,14 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin Example/name.py
-/copy:Example/name.py
+#begin Example/font.py
+/copy:Example/font.py
+
+#begin Example/tex.png
+/copy:Example/tex.png
+
+#begin Example/tex.py
+/copy:Example/tex.py
 
 #begin Fonts/Basis33.fnt
 /copy:Fonts/Basis33.fnt
@@ -33,6 +39,18 @@
 #begin Fonts/Cayetano_0.png
 /copy:Fonts/Cayetano_0.png
 
+#begin Fonts/Chava.fnt
+/copy:Fonts/Chava.fnt
+
+#begin Fonts/Chava_0.png
+/copy:Fonts/Chava_0.png
+
+#begin Fonts/GameOver.fnt
+/copy:Fonts/GameOver.fnt
+
+#begin Fonts/GameOver_0.png
+/copy:Fonts/GameOver_0.png
+
 #begin Fonts/OrangeKid.fnt
 /copy:Fonts/OrangeKid.fnt
 
@@ -47,30 +65,4 @@
 
 #begin Source/resource.py
 /copy:Source/resource.py
-
-#begin Example/font.py
-/copy:Example/font.py
-
-#begin Example/tex.png
-/copy:Example/tex.png
-
-#begin Example/tex.py
-/copy:Example/tex.py
-
-#begin Textures/Ui.png
-/importer:TextureImporter
-/processor:TextureProcessor
-/build:Textures/Ui.png
-
-#begin Fonts/Chava.fnt
-/copy:Fonts/Chava.fnt
-
-#begin Fonts/Chava_0.png
-/copy:Fonts/Chava_0.png
-
-#begin Fonts/GameOver.fnt
-/copy:Fonts/GameOver.fnt
-
-#begin Fonts/GameOver_0.png
-/copy:Fonts/GameOver_0.png
 
