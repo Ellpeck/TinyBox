@@ -50,10 +50,9 @@ namespace TinyBox {
 
         public void Run() {
             // set some module variables
-            if (this.scope.TryGetVariable("game", out var game)) {
-                game.width = GameImpl.Width;
-                game.height = GameImpl.Height;
-            }
+            var game = this.scope.GetVariable("game");
+            game.width = GameImpl.Width;
+            game.height = GameImpl.Height;
 
             // create the game instance
             var operations = this.scope.Engine.CreateOperations(this.scope);
